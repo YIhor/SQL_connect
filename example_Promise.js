@@ -15,7 +15,6 @@ const config = {
 }
 connectAndQuery();
 async function connectAndQuery() {
-    const searchEmail = "protools@test.com"
     const id = 585;
     try {
         const promise = new Promise((resolve, reject) => {
