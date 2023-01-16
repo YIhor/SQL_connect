@@ -21,7 +21,7 @@ async function connectAndQuery() {
             const poolConnection =  sql.connect(config)
             resolve(poolConnection);
       });
-      promise.then((value) => {
+      await promise.then((value) => {
         const resultSet = value.request().query(`SELECT Email, Id, Salt FROM Users WHERE Id = ${id} `)
         .then(function(result) {
           console.log(result) 
