@@ -13,7 +13,7 @@ const config = {
         encrypt: true
     }
 }
-connectAndQuery();
+await connectAndQuery();
 async function connectAndQuery() {
     const id = 585;
     try {
